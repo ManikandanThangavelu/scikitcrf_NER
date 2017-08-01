@@ -1,0 +1,371 @@
+{
+    "entity_examples": [
+      {
+        "text": "hey",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "howdy",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hey there",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hi",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "initiate a payment via preformat",
+        "intent": "Initiate_payment_preformat",
+        "entities": []
+      },
+      {
+        "text": "I want to initiate a payment via preformat",
+        "intent": "Initiate_payment_preformat",
+        "entities": []
+      },
+      {
+        "text": "Can I make a payment from debit account 2345568 with preformat codePreformat1CITI234 today ?",
+        "intent": "Initiate_payment_preformat",
+        "entities": [
+          {
+            "start": 26,
+            "end": 31,
+            "value": "debit",
+            "entity": "acc_type"
+          },
+          {
+            "start": 85,
+            "end": 90,
+            "value": "today",
+            "entity": "when"
+          }
+        ]
+      },
+      {
+        "text": "Initiate a payment to ABC Holdings for amount 4563 EUR for today.",
+        "intent": "make_payment",
+        "entities": [
+          {
+            "start": 22,
+            "end": 25,
+            "value": "ABC",
+            "entity": "whom"
+          },
+          {
+            "start": 46,
+            "end": 54,
+            "value": "4563 EUR",
+            "entity": "amount"
+          },
+          {
+            "start": 59,
+            "end": 64,
+            "value": "today",
+            "entity": "when"
+          }
+        ]
+      },
+      {
+        "text": "show me chinese restaurants",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 8,
+            "end": 15,
+            "value": "chinese",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "show me chines restaurants",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 8,
+            "end": 14,
+            "value": "chinese",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "yes",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "yep",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "yeah",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "show me a mexican place in the centre",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 31,
+            "end": 37,
+            "value": "centre",
+            "entity": "location"
+          },
+          {
+            "start": 10,
+            "end": 17,
+            "value": "mexican",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "goodbye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "good bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "stop",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "end",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "no",
+        "intent": "reject",
+        "entities": []
+      },
+      {
+        "text": "No, I don't want to",
+        "intent": "reject",
+        "entities": []
+      },
+      {
+        "text": "No, don't do that",
+        "intent": "reject",
+        "entities": []
+      },
+      {
+        "text": "not interested",
+        "intent": "reject",
+        "entities": []
+      },
+      {
+        "text": "i am looking for an indian spot",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 20,
+            "end": 26,
+            "value": "indian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "search for restaurants",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
+        "text": "anywhere in the west",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 16,
+            "end": 20,
+            "value": "west",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "central indian restaurant",
+        "intent": "restaurant_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "central",
+            "entity": "location"
+          },
+          {
+            "start": 8,
+            "end": 14,
+            "value": "indian",
+            "entity": "cuisine"
+          }
+        ]
+      },
+      {
+        "text": "indeed",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "that's right",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "ok",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "great",
+        "intent": "affirm",
+        "entities": []
+      }
+    ],
+    "intent_examples": [
+      {
+        "text": "hey",
+        "intent": "greet"
+      },
+      {
+        "text": "howdy",
+        "intent": "greet"
+      },
+      {
+        "text": "hey there",
+        "intent": "greet"
+      },
+      {
+        "text": "hello",
+        "intent": "greet"
+      },
+      {
+        "text": "hi",
+        "intent": "greet"
+      },
+      {
+        "text": "i'm looking for a place to eat",
+        "intent": "restaurant_search"
+      },
+      {
+        "text": "i'm looking for a place in the north of town",
+        "intent": "restaurant_search"
+      },
+      {
+        "text": "show me chinese restaurants",
+        "intent": "restaurant_search"
+      },
+      {
+        "text": "yes",
+        "intent": "affirm"
+      },
+      {
+        "text": "yep",
+        "intent": "affirm"
+      },
+      {
+        "text": "yeah",
+        "intent": "affirm"
+      },
+      {
+        "text": "show me a mexican place in the centre",
+        "intent": "restaurant_search"
+      },
+      {
+        "text": "bye",
+        "intent": "goodbye"
+      },
+      {
+        "text": "goodbye",
+        "intent": "goodbye"
+      },
+      {
+        "text": "good bye",
+        "intent": "goodbye"
+      },
+      {
+        "text": "stop",
+        "intent": "goodbye"
+      },
+      {
+        "text": "end",
+        "intent": "goodbye"
+      },
+      {
+        "text": "i am looking for an indian spot",
+        "intent": "restaurant_search"
+      },
+      {
+        "text": "search for restaurants",
+        "intent": "restaurant_search"
+      },
+      {
+        "text": "anywhere in the west",
+        "intent": "restaurant_search"
+      },
+      {
+        "text": "central indian restaurant",
+        "intent": "restaurant_search"
+      },
+      {
+        "text": "indeed",
+        "intent": "affirm"
+      },
+      {
+        "text": "that's right",
+        "intent": "affirm"
+      },
+      {
+        "text": "ok",
+        "intent": "affirm"
+      },
+      {
+        "text": "great",
+        "intent": "affirm"
+      }
+    ],
+    "common_examples": [
+      {
+        "text": "I need icecream",
+        "intent": "Icecream",
+        "entities": [
+          {
+            "start": 6,
+            "end": 15,
+            "value": " icecream",
+            "entity": ""
+          }
+        ]
+      },
+      {
+        "text": "I want to reset my password",
+        "intent": "reset_password",
+        "entities": []
+      }
+    ]
+  }
